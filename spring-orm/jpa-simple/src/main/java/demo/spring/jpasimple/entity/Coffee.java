@@ -26,7 +26,7 @@ public class Coffee implements Serializable{
     @Id
 //    @GeneratedValue
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private String name;
     @Column
     // PersistentMoneyAmount: 金额存的是decimal

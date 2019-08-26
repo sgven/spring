@@ -23,7 +23,7 @@ public class Order implements Serializable {
     @Id
 //    @GeneratedValue
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private String customer;
     @ManyToMany
     @JoinTable(name = "t_order_coffee")
