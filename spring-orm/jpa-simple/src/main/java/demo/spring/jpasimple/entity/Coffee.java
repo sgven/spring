@@ -19,6 +19,16 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+/**
+ * 试试用 @lombok.experimental.Accessors(chain = true) 取代 @lombok.Builder, setXXX方法也可以连着调用呢
+ * 用@Accessors(chain = true)替换掉@Builder
+ *
+ * private void initOrders() {
+        final Coffee chain = new Coffee()
+        .setId(1L)
+        .setName("chain");
+    }
+ */
 public class Coffee implements Serializable{
 
     // 指定策略strategy为IDENTITY方式，Hibernate就不会帮我们创建Sequence序列，而是使用数据库IDENTITY自增主键的方式生成主键
