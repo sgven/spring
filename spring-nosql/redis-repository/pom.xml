@@ -29,6 +29,10 @@
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 
+		<!-- LettucePoolingClientConfiguration连接池配置所需的依赖，若没有会报下面的错误：
+			redisConnectionFactory threw exception; nested exception is java.lang.NoClassDefFoundError:
+				org/apache/commons/pool2/impl/GenericObjectPoolConfig
+		-->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-pool2</artifactId>
