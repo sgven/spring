@@ -11,7 +11,7 @@ import javax.sql.DataSource;
 
 @SpringBootApplication
 @Slf4j
-@EnableTransactionManagement(proxyTargetClass = true)
+@EnableTransactionManagement(proxyTargetClass = true) // proxyTargetClass true表示使用cglib动态代理，false表示使用jdk动态代理
 public class DruidMonitorApplication implements CommandLineRunner {
 	@Autowired
 	private DataSource dataSource;
