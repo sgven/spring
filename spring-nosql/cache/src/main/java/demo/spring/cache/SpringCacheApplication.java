@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableJpaRepositories
 // 标明了会拦截类的执行，通过这里可以知道spring缓存抽象的运行机制是基于AOP的，对加了注解的方法的执行会做一个拦截
 @EnableCaching(proxyTargetClass = true)
-//@EnableCaching // 效果是一样的
+//@EnableCaching // 效果是一样的 proxyTargetClass true表示使用cglib动态代理，false表示使用jdk动态代理
 public class SpringCacheApplication implements ApplicationRunner {
 	@Autowired
 	private CoffeeService coffeeService;
