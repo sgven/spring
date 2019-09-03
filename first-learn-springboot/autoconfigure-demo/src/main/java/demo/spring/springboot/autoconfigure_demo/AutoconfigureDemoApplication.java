@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"demo.spring.springboot.autoconfigure_demo","demo.spring.autoconfigure_backport"})
 public class AutoconfigureDemoApplication {
 
 	public static void main(String[] args) {
