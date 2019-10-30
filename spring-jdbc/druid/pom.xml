@@ -29,8 +29,8 @@
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 			<exclusions>
 				<exclusion>
-					<groupId>HiKariCP</groupId>
-					<artifactId>com.zaxxer</artifactId>
+					<groupId>com.zaxxer</groupId>
+					<artifactId>HiKariCP</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
