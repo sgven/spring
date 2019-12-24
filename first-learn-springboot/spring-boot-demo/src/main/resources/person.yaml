@@ -1,0 +1,13 @@
+#person.yaml
+#注意第一行，我们使用---代表一个yaml文档的开始，并且立刻使用!!告诉下面的类型为com.example.demo.Person
+#这样配置后，就可以直接使用load方法来加载对象了
+--- !!com.example.demo.Person
+given  : Chris
+family : Dumars
+address:
+    lines: |
+        458 Walkman Dr.
+        Suite #292
+    city    : Royal Oak
+    state   : MI
+    postal  : 48046

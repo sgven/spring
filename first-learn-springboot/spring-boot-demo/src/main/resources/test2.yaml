@@ -1,0 +1,24 @@
+#test2.yaml
+
+#test1
+
+#sample1:
+#    r: 10
+#sample2:
+#    other: haha
+#sample3:
+#    x: 100
+#    y: 100
+
+#test2 load方法无法处理---标记 需要loadAll方法解析---yaml片段
+
+---
+sample1:
+    r: 10
+---
+sample2:
+    other: haha
+---
+sample3:
+    x: 100
+    y: 100
