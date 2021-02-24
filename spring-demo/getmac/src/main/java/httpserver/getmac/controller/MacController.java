@@ -14,6 +14,12 @@ import java.util.Map;
 @RequestMapping("mac")
 public class MacController {
 
+    /**
+     * 本接口用回调函数名称包裹返回数据，是为了支持前端ajax请求jsonp跨域
+     * @param request
+     * @param response
+     * @throws Exception
+     */
     @RequestMapping("getmac")
     public void getMacAddr(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String macAddr = MacHelper.getMacAddr();
