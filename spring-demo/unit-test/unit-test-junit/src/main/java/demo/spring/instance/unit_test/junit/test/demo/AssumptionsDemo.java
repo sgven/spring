@@ -7,6 +7,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import static org.junit.jupiter.api.Assumptions.assumingThat;
 
+/**
+ * 假设
+ */
 class AssumptionsDemo {
     private final Calculator calculator = new Calculator();
 

@@ -31,12 +31,13 @@
 		</dependency>
 
 		<!-- JUnit -->
-		<dependency>
+		<!-- spring-boot依赖的jupiter-engine是5.5.2，这里依赖的5.2.0版本低了，导致@Order排序无效 -->
+		<!--<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>
 			<version>${junit5.version}</version>
 			<scope>compile</scope>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.junit.platform</groupId>
 			<artifactId>junit-platform-launcher</artifactId>

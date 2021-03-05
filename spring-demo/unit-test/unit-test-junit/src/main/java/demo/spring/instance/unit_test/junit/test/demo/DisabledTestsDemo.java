@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
+ * 禁用测试--method
  * 通过IDEA工具，运行class才有效果
  */
 class DisabledTestsDemo {
